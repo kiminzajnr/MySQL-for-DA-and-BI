@@ -1,14 +1,9 @@
-- SQL - Structured Query Language
-> Programming language specifically designed for working with databases
-> To create and manipulate relational databases
+SQL - Structured Query Language
+> Programming language specifically designed for working with databases. To create and manipulate relational databases
 
-- Create
-- Manipulate
-- Share
-Data from relational database management systems  
-
-Allows you to write queries that the computer can execute and then provide database insight  
-
+Allows you to write queries that the computer can execute and then provide database insight
+![query_arch](img/db.png)
+  
 #### Why MySQL  
 - DBMS to implement SQL Commands
 - Reliable, mature, opensource
