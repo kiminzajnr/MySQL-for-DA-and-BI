@@ -10,7 +10,7 @@ A Client of a MySQL Server for database design, modelling, creation, manipulatio
 ```
 CREATE DATABASE [IF NOT EXISTS] database_name;
 ```  
-```[IF NOT EXISTS]```
+```[IF NOT EXISTS]```  
 Verifies if a database with the same name exists already - It's optinal though  
 *The SQL code is not case sensitive*  
 
