@@ -15,7 +15,8 @@ Verifies if a database with the same name exists already - It's optinal though
 *The SQL code is not case sensitive*  
 
 ### Creating Table
-```CREATE DATABASE [IF NOT EXISTS] sales;
-   CREATE TABLE table_name ( );
+```
+CREATE DATABASE [IF NOT EXISTS] sales;
+CREATE TABLE table_name ( );
 ```
 *You should add atleast one column when creating a table*  
