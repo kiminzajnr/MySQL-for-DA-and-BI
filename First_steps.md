@@ -11,7 +11,7 @@ A Client of a MySQL Server for database design, modelling, creation, manipulatio
 CREATE DATABASE [IF NOT EXISTS] database_name;
 ```  
 ```[IF NOT EXISTS]```  
-Verifies if a database with the same name exists already - It's optinal though  
+Verifies if a database with the same name exists already - It's optional though  
 
 *The SQL code is not case sensitive*  
 
@@ -22,9 +22,9 @@ CREATE TABLE table_name ( );
 ```
 *You should add atleast one column when creating a table*  
 
-### String Data Types
-string data type  
+### String Data Types  
 Example  
+
 character `CHAR(5)`  
 variable character `VARCHAR(5)`  
 ENUM (“enumerate”) `ENUM(‘M’,’F’)`
