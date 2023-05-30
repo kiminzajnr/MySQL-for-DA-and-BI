@@ -6,3 +6,6 @@ A Client of a MySQL Server for database design, modelling, creation, manipulatio
 ### The Client-Server Model  
 ![query_arch](img/client_server.png)  
 ### Creating a Database  
+```
+CREATE DATABASE [IF NOT EXISTS] database_name;
+```
