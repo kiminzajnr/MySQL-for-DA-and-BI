@@ -25,8 +25,11 @@ CREATE TABLE table_name ( );
 ### String Data Types
 string data type
 Example
-character  CHARCHAR(5)
-variable character  VARCHARVARCHAR(5)
-ENUM (“enumerate”)  ENUM(‘M’,’F’)
+character  
+`CHAR(5)`
+variable character  
+`VARCHAR(5)`
+ENUM (“enumerate”)  
+`ENUM(‘M’,’F’)`
 
 *for Enum, MySQL will show an error if you attempt to insert any value different from “M” or “F”*
