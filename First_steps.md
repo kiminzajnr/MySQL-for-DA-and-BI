@@ -32,4 +32,4 @@ ENUM (“enumerate”) `ENUM(‘M’,’F’)`
 *for Enum, MySQL will show an error if you attempt to insert any value different from “M” or “F”*  
 
 ### Creating a table exercise  
-Create the “customers” table in the “sales” database. Let it contain the following 5 columns: customer_id, first_name, last_name, email_address, and number_of_complaints. Let the data types of customer_id and number_of_complaints be integer, while the data types of all other columns be VARCHAR of 255.
+Create the “customers” table in the “sales” database. Let it contain the following 5 columns: customer_id, first_name, last_name, email_address, and number_of_complaints. Let the data types of customer_id and number_of_complaints be integer, while the data types of all other columns be VARCHAR of 255
