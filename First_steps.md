@@ -21,6 +21,16 @@ CREATE DATABASE [IF NOT EXISTS] sales;
 CREATE TABLE table_name ( );
 ```
 *You should add atleast one column when creating a table*  
+```
+create table sales
+(
+	purchase_number int auto_increment,
+    date_of_purchase date,
+    customer_id int,
+    item_code varchar(10),
+primary key (purchase_number)
+);
+```
 
 ### String Data Types  
 Example  
