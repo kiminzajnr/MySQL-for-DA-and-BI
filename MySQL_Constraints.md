@@ -4,7 +4,7 @@ Specific rules or limits that we define in our tables to outline relationships b
 - #### PRIMARY KEY constraint
 
 - #### FOREIGN KEY constraint
-*On delete cascade - removes dependent objects together*
+    *On delete cascade - removes dependent objects together*
 - #### UNIQUE constraint
 
 - #### DEFAULT constraint
