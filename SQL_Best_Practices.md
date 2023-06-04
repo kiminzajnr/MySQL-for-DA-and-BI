@@ -8,8 +8,8 @@
 
 #### Naming variables or SQL ojects
 - *shorter*, *meaningful* names, conveying *specific* information
-- purchase_number
-- PurchaseNumber
+- purchase_number [x]
+- PurchaseNumber [x]
 - customer_purchase_unique_number
 - purchase number
 - Names will constitute 80% of your code  
