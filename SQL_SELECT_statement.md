@@ -173,5 +173,5 @@ SELECT
 FROM
     employees
 WHERE
-    first_name NOT LIKE ('Mar%');
+    first_name NOT LIKE ('%Mar%');
 ```
