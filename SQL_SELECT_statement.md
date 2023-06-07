@@ -92,3 +92,86 @@ WHERE
         OR first_name = 'Aruna')
         AND gender = 'F';
 ```
+
+#### NOT IN
+- use the not in operator to select all individuals from the 'employees' table, whose first name is either "Denis" or "Elvis"
+
+```
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    first_name IN ('Denis' , 'Elvis');
+```
+- could also be done as
+```
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    first_name = 'Denis' or first_name = 'Elvis';
+```
+
+*the second option is slow*
+
+- Extract all records from the 'employees' table, aside from those with employees John, Mark or Jacob
+```
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    first_name NOT IN ('John', 'Mark', 'Jacob');
+```
+
+#### LIKE - NOT LIKE
+- % - a substitute for a **sequence** of characters
+- helps you match a **single** character
+
+*to match all names starting with 'Mar'*
+```
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    first_name LIKE ('Mar%');
+```  
+*to match all names ending with 'Mar'*
+```
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    first_name LIKE ('%Mar');
+```  
+*to match all names  with 'Mar' in between*
+```
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    first_name LIKE ('%Mar%');
+```  
+*to match all names starting with 'Mar' followed by a single character*
+```
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    first_name LIKE ('Mar_');
+```  
+*to match all names not containing sequence 'Mar'*
+```
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    first_name NOT LIKE ('Mar%');
+```
