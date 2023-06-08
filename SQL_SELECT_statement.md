@@ -177,6 +177,6 @@ WHERE
 ```
 
 #### Wildcard Characters
-1. ==%== - a substitute for a *sequence* of characters
-2. <mark>__</mark> - helps you match a *single* character
-3. <mark>*</mark> - Will deliver a list of *all* columns in a table. it can also be used to count *all* rows of a table
+1. `%` - a substitute for a *sequence* of characters
+2. `_` - helps you match a *single* character
+3. `*` - Will deliver a list of *all* columns in a table. it can also be used to count *all* rows of a table
