@@ -256,3 +256,19 @@ FROM
 WHERE
     salary > 150000;
 ```
+
+#### SELECT DISTINCT
+- selects all *distinct, different* data values
+```
+SELECT DISTINCT column_1,... column_n
+FROM table_name;
+```
+
+*Obtain a list with all different 'hire dates' from table 'employees'
+
+```
+SELECT DISTINCT
+    hire_date
+FROM
+    employees;
+```
