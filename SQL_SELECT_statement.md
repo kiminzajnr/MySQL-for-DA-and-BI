@@ -180,3 +180,54 @@ WHERE
 1. `%` - a substitute for a *sequence* of characters
 2. `_` - helps you match a *single* character
 3. `*` - Will deliver a list of *all* columns in a table. it can also be used to count *all* rows of a table
+
+#### BETWEEN... AND...
+- designate the interval to which a given value belongs
+
+```
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    hire_date BETWEEN '1990-01-01' AND '2000-01-01';
+```
+- `1990-01-01` and `2000-01-01` will be included in the retrieved list of records
+
+#### NOT BETWEEN... AND...
+- will refer to an interval below the first value and above the second value
+
+```
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    hire_date NOT BETWEEN '1990-01-01' AND '2000-01-01';
+```
+
+*can also be applied to strings other than dates only*
+
+#### IS NOT NULL / IS NULL
+- extract values that are not null / are null
+```
+SELECT column_1,... column_n
+FROM table_name
+WHERE column_name IS NOT NULL;
+```
+
+```
+SELECT column_1,... column_n
+FROM table_name
+WHERE column_name IS NULL;
+```
+
+Select the names of all departments whos department number value is not null
+```
+SELECT 
+    *
+FROM
+    departments
+WHERE
+    dept_no IS NOT NULL;
+```
