@@ -371,3 +371,46 @@ WHERE
 GROUP BY salary
 ORDER BY salary;
 ```
+
+#### HAVING
+- refine the output from records that do not satisfy a certain condition. mostly implemented with `GROUP BY`
+
+```
+SELECT colum_name(s)
+FROM table_name
+WHERE conditions
+GROUP BY column_names(s)
+HAVING conditions
+ORDER BY column_name(s);
+```
+
+- `WHERE` vs `HAVING`
+- after `HAVING`, you can have a condition with an aggregate function, while `WHERE` cannot use aggregate functions within its conditions
+
+- select the employee numbers of all individuals who have signed more that 1 contract after the 1st of January 2000
+
+```
+SELECT 
+    emp_no, COUNT(emp_no) AS contra_sighned
+FROM
+    dept_emp
+WHERE
+    from_date > '2000-01-01'
+GROUP BY emp_no
+HAVING COUNT(emp_no) > 1
+ORDER BY emp_no;
+```
+
+OR
+
+```
+SELECT 
+    emp_no
+FROM
+    dept_emp
+WHERE
+    from_date > '2000-01-01'
+GROUP BY emp_no
+HAVING COUNT(from_date) > 1
+ORDER BY emp_no;
+```
