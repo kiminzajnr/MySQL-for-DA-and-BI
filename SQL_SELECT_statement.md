@@ -272,3 +272,25 @@ SELECT DISTINCT
 FROM
     employees;
 ```
+
+#### Aggregate Functions
+
+- `COUNT()` - counts the number of non-null records in a field
+```
+SELECT COUNT(column_name)
+FROM table_name;
+```
+
+`COUNT(DISTINCT)`
+
+```
+SELECT COUNT(DISTINCT column_name)
+FROM table_name;
+```
+
+- `SUM()` - sums all the non-null values in a column
+- `MIN()` - returns the minimum value from the entire list
+- `MAX()` - returns the maximum value from the entire list
+- `AVG()` - calculates the average of all non-null values       belonging to a certain column of a table
+
+*aggregate functions ignore null values unless told not to*
