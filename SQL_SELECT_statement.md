@@ -272,6 +272,13 @@ SELECT DISTINCT
 FROM
     employees;
 ```
+SELECT 
+    COUNT(*)
+FROM
+    salaries
+WHERE
+    salary >= 100000;
+```
 
 #### Aggregate Functions
 
@@ -287,6 +294,11 @@ FROM table_name;
 SELECT COUNT(DISTINCT column_name)
 FROM table_name;
 ```
+
+How many annual contracts with a value higher than or equal to $100,000 have been registered in the salaries table?
+
+```
+
 
 - `SUM()` - sums all the non-null values in a column
 - `MIN()` - returns the minimum value from the entire list
