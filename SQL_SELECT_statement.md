@@ -414,3 +414,24 @@ GROUP BY emp_no
 HAVING COUNT(from_date) > 1
 ORDER BY emp_no;
 ```
+
+#### LIMIT
+```
+SELECT column_name(s)
+FROM table_name
+WHERE conditions
+GROUP BY column_name(s)
+HAVING conditions
+ORDER BY column_name(s)
+LIMIT number;
+```
+
+- select 10 highest paid employees
+```
+SELECT 
+    emp_no, salary
+FROM
+    salaries
+ORDER BY salary DESC
+LIMIT 10;
+```
