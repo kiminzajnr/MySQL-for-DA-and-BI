@@ -305,3 +305,69 @@ WHERE
 - `AVG()` - calculates the average of all non-null values       belonging to a certain column of a table
 
 *aggregate functions ignore null values unless told not to*
+
+#### ORDER BY
+
+```
+SELECT 
+    *
+FROM
+    employees
+ORDER BY first_name;
+```
+
+- default is ASC, to order in DESC
+
+```
+SELECT 
+    *
+FROM
+    employees
+ORDER BY first_name DESC;
+```
+
+#### GROUP BY
+
+- to group results according to a specific field or fields
+- `GROUP BY` is placed immediately after the `WHERE` conditions if any and just before the `ORDER BY` clause
+
+```
+SELECT column_name(s)
+FROM table_name
+WHERE conditions
+GROUP BY column_name(s)
+```
+
+```
+SELECT 
+    first_name, COUNT(first_name) AS
+FROM
+    employees
+GROUP BY first_name
+ORDER BY first_name DESC;
+```
+
+#### Alias (AS)
+- used to rename a selection from your query
+
+```
+SELECT 
+    first_name, COUNT(first_name) AS names_count
+FROM
+    employees
+GROUP BY first_name
+ORDER BY first_name DESC;
+```
+
+- Write a query that obtains two columns. The first column must contain annual salaries higher than 80,000 dollars. The second column, renamed to “emps_with_same_salary”, must show the number of employees contracted to that salary. Lastly, sort the output by the first column.
+
+```
+SELECT 
+    salary, COUNT(salary) AS emps_with_same_salary
+FROM
+    salaries
+WHERE
+    salary > 80000
+GROUP BY salary
+ORDER BY salary;
+```
