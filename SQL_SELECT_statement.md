@@ -222,7 +222,7 @@ FROM table_name
 WHERE column_name IS NULL;
 ```
 
-Select the names of all departments whos department number value is not null
+- Select the names of all departments whos department number value is not null
 ```
 SELECT 
     *
@@ -234,7 +234,7 @@ WHERE
 
 #### More comparison operators - Exercise
 
-Retrieve list with data about all female employees who were hired in the year 2000 or after
+- Retrieve list with data about all female employees who were hired in the year 2000 or after
 
 ```
 SELECT 
@@ -246,7 +246,7 @@ WHERE
         AND gender = 'F';
 ```
 
-Retrieve a list with all employees' salaries higher than $150,000
+- Retrieve a list with all employees' salaries higher than $150,000
 
 ```
 SELECT 
@@ -264,7 +264,7 @@ SELECT DISTINCT column_1,... column_n
 FROM table_name;
 ```
 
-*Obtain a list with all different 'hire dates' from table 'employees'
+- Obtain a list with all different 'hire dates' from table 'employees'
 
 ```
 SELECT DISTINCT
@@ -288,7 +288,7 @@ SELECT COUNT(DISTINCT column_name)
 FROM table_name;
 ```
 
-How many annual contracts with a value higher than or equal to $100,000 have been registered in the salaries table?
+- How many annual contracts with a value higher than or equal to $100,000 have been registered in the salaries table?
 
 ```
 SELECT 
