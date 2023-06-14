@@ -37,3 +37,26 @@ VALUES
     '2011-01-01'
 );
 ```
+
+#### Inserting data into a new table
+
+#### INSERT INTO SELECT
+
+```
+INSERT INTO table_2 (column_1, ..., column_n)
+SELECT column_1, ..., column_n
+FROM table_1
+WHERE condition;
+```
+
+- create a new table and insert all data as from *departments* table
+
+```
+CREATE TABLE departments_dup (
+    dept_no CHAR(4) NOT NULL,
+    dept_name VARCHAR(40) NOT NULL
+);
+
+INSERT INTO departments_dup
+SELECT * FROM departments;
+```
