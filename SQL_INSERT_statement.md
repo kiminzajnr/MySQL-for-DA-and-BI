@@ -15,7 +15,7 @@ INSERT INTO employees
     hire_date
 ) VALUES
 (
-9999901,
+    9999901,
     '1986-04-21',
     'John',
     'Smith',
@@ -29,7 +29,7 @@ OR
 INSERT INTO employees
 VALUES
 (
-9999902,
+    9999902,
     '1986-04-21',
     'John',
     'Smith',
