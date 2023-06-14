@@ -7,7 +7,7 @@ VALUES (value_1, ..., value_n)
 ```
 INSERT INTO employees
 (
-	emp_no,
+    emp_no,
     birth_date,
     first_name,
     last_name,
@@ -15,7 +15,7 @@ INSERT INTO employees
     hire_date
 ) VALUES
 (
-	9999901,
+9999901,
     '1986-04-21',
     'John',
     'Smith',
@@ -29,7 +29,7 @@ OR
 INSERT INTO employees
 VALUES
 (
-	9999902,
+9999902,
     '1986-04-21',
     'John',
     'Smith',
