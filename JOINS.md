@@ -75,3 +75,23 @@ WHERE
     em.last_name = 'Markovitch'
 ORDER BY dept_no DESC , emp_no;
 ```
+
+#### RIGHT JOIN
+- ```RIGHT JOIN``` = ```RIGHT OUTER JOIN```
+- all values from the right table that match no values from the left table + all matching values of the two tables
+- all records from the right table will be returned in the result set
+
+#### JOIN AND WHERE USED TOGETHER
+- Select the first and last name, the hire date, and the job title of all employees whose first name is “Margareta” and have the last name “Markovitch”
+
+```
+SELECT 
+    e.emp_no, e.first_name, e.last_name, e.hire_date, t.title
+FROM
+    employees e
+        JOIN
+    titles t ON e.emp_no = t.emp_no
+WHERE
+    first_name = 'Margareta'
+        AND last_name = 'Markovitch';
+```
